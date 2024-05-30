@@ -41,38 +41,105 @@
     <script defer src="assets/js/comm.js"></script>
   </head>
   <body>
-    <header id="header">
-      <h1>
-        <a href="#"><img src="/images/whitelogo.png" alt="양원숲속도서관" /></a>
-      </h1>
-      <div class="nav">
-        <div class="top_nav">
-          <ul>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-            <li><a href="#">내 서재</a></li>
-            <li><a href="#">사이트맵</a></li>
-          </ul>
+    <div class="wrap">
+      <header id="header">
+        <h1>
+          <a href="#"
+            ><img src="/images/whitelogo.png" alt="양원숲속도서관"
+          /></a>
+        </h1>
+        <div class="nav">
+          <div class="top_nav">
+            <ul>
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">내 서재</a></li>
+              <li><a href="#">사이트맵</a></li>
+            </ul>
+          </div>
+          <div class="main_nav">
+            <ul class="nav_1depth">
+              <li>
+                <a href="#">자료마당</a>
+              </li>
+              <li>
+                <a href="#">독서문화행사</a>
+              </li>
+              <li>
+                <a href="#">참여마당</a>
+              </li>
+              <li>
+                <a href="#">특색사업</a>
+              </li>
+              <li>
+                <a href="#">도서관안내</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="main_nav">
-          <ul>
-            <li><a href="#">자료마당</a></li>
-            <li><a href="#">독서문화행사</a></li>
-            <li><a href="#">참여마당</a></li>
-            <li><a href="#">특색사업</a></li>
-            <li><a href="#">도서관안내</a></li>
-          </ul>
+      </header>
+      <main id="main">
+        <div class="menu">
+          <h2>책으로 여는 미래, 미래를 여는 문</h2>
+          <img src="./images/mainlogo.png" alt="양원숲속도서관" />
+          <div class="search">
+            <input type="text" placeholder="검색어를 입력하세요" />
+            <button><img src="./images/search.png" alt="검색" /></button>
+          </div>
+          <div class="big_menu">
+            <ul class="big_menu_list">
+              <li>
+                <a href="#">
+                  <img src="./images/notice.png" alt="이용안내" />
+                  <h3>이용안내</h3>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/join.png" alt="회원가입안내" />
+                  <h3>회원가입<br />안내</h3>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/connect.png" alt="책이음상호대차" />
+                  <h3>책이음<br />상호대차</h3>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/mobile.png" alt="전자책" />
+                  <h3>전자책</h3>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/journal.png" alt="전자저널" />
+                  <h3>전자저널</h3>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/audio.png" alt="오디오북" />
+                  <h3>오디오북</h3>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </header>
-    <main id="main">
-      <div class="menu"></div>
-      <div class="board"></div>
-      <div class="book"></div>
-    </main>
-    <footer id="footer">
-      <div class="link"></div>
-      <div class="footer"></div>
-    </footer>
+        <div class="board"></div>
+        <div class="book"></div>
+      </main>
+      <footer id="footer">
+        <div class="link"></div>
+        <div class="footer"></div>
+      </footer>
+    </div>
   </body>
 </html>
