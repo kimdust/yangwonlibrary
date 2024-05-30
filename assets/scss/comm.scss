@@ -265,7 +265,10 @@ body {
       }
     }
   }
-
+  .info {
+    display: flex;
+    gap: 50px;
+  }
   .book {
     width: 900px;
     height: 375px;
@@ -325,6 +328,53 @@ body {
           color: #555;
         }
       }
+    }
+  }
+  .calender {
+    width: 100%;
+    h3 {
+      font-size: 30px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        width: 30px;
+        height: 30px;
+        display: block;
+        .fa-arrow-right {
+          font-size: 13px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid #a7a7a7;
+          color: #888888;
+          padding: 8px;
+          display: block;
+        }
+      }
+    }
+    .fc-header-toolbar {
+      height: 20px;
+      h2 {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      button {
+        background: none;
+        border: none;
+        span {
+          color: #333;
+        }
+      }
+    }
+    .fc-daygrid-day-number {
+      font-size: 13px;
+    }
+    .fc-daygrid-day-bottom {
+      display: block;
+      font-size: 13px;
+      margin-top: -5px !important;
     }
   }
 }

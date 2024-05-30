@@ -508,6 +508,10 @@ body {
 #main .board .event .event_list .event_list_b {
   margin-bottom: 20px;
 }
+#main .info {
+  display: flex;
+  gap: 50px;
+}
 #main .book {
   width: 900px;
   height: 375px;
@@ -568,6 +572,53 @@ body {
 #main .book .mySwiper swiper-slide p {
   font-size: 15px;
   color: #555;
+}
+#main .calender {
+  width: 100%;
+}
+#main .calender h3 {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .calender h3 a {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+#main .calender h3 a .fa-arrow-right {
+  font-size: 13px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #a7a7a7;
+  color: #888888;
+  padding: 8px;
+  display: block;
+}
+#main .calender .fc-header-toolbar {
+  height: 20px;
+}
+#main .calender .fc-header-toolbar h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+#main .calender .fc-header-toolbar button {
+  background: none;
+  border: none;
+}
+#main .calender .fc-header-toolbar button span {
+  color: #333;
+}
+#main .calender .fc-daygrid-day-number {
+  font-size: 13px;
+}
+#main .calender .fc-daygrid-day-bottom {
+  display: block;
+  font-size: 13px;
+  margin-top: -5px !important;
 }
 
 #footer {
