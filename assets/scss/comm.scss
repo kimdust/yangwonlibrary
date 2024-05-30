@@ -159,8 +159,11 @@ body {
       font-weight: bold;
       display: flex;
       justify-content: space-between;
-      button {
-        margin-bottom: 10px;
+      align-items: center;
+      a {
+        width: 30px;
+        height: 30px;
+        display: block;
         .fa-arrow-right {
           font-size: 13px;
           width: 30px;
@@ -168,7 +171,8 @@ body {
           border-radius: 50%;
           border: 1px solid #a7a7a7;
           color: #888888;
-          padding: 7px;
+          padding: 8px;
+          display: block;
         }
       }
     }
@@ -216,7 +220,6 @@ body {
     }
     .event {
       width: 100%;
-
       .event_list {
         display: flex;
         flex-wrap: wrap;
@@ -264,10 +267,65 @@ body {
   }
 
   .book {
-    width: 100%;
+    width: 900px;
     height: 375px;
-    background-color: #8e8e8e;
     margin-bottom: 70px;
+    h3 {
+      font-size: 30px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .book_tab {
+        display: flex;
+        gap: 20px;
+        button {
+          font-family: "Pretendard";
+          font-size: 30px;
+        }
+        .active {
+          font-weight: bold;
+        }
+      }
+      a {
+        width: 30px;
+        height: 30px;
+        display: block;
+        .fa-arrow-right {
+          font-size: 13px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid #a7a7a7;
+          color: #888888;
+          padding: 8px;
+          display: block;
+        }
+      }
+    }
+    .mySwiper {
+      margin-top: 20px;
+      swiper-slide {
+        text-align: center;
+        img {
+          width: 100%;
+          margin-bottom: 5px;
+          box-shadow: rgb(209, 209, 209) 0px 0px 5px;
+        }
+        strong {
+          font-weight: bold;
+          width: 177px;
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        p {
+          font-size: 15px;
+          color: #555;
+        }
+      }
+    }
   }
 }
 

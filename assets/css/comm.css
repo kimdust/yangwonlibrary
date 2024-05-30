@@ -407,18 +407,22 @@ body {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-#main .board h3 button {
-  margin-bottom: 10px;
+#main .board h3 a {
+  width: 30px;
+  height: 30px;
+  display: block;
 }
-#main .board h3 button .fa-arrow-right {
+#main .board h3 a .fa-arrow-right {
   font-size: 13px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid #a7a7a7;
   color: #888888;
-  padding: 7px;
+  padding: 8px;
+  display: block;
 }
 #main .board .notice {
   width: 400px;
@@ -505,10 +509,65 @@ body {
   margin-bottom: 20px;
 }
 #main .book {
-  width: 100%;
+  width: 900px;
   height: 375px;
-  background-color: #8e8e8e;
   margin-bottom: 70px;
+}
+#main .book h3 {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .book h3 .book_tab {
+  display: flex;
+  gap: 20px;
+}
+#main .book h3 .book_tab button {
+  font-family: "Pretendard";
+  font-size: 30px;
+}
+#main .book h3 .book_tab .active {
+  font-weight: bold;
+}
+#main .book h3 a {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+#main .book h3 a .fa-arrow-right {
+  font-size: 13px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #a7a7a7;
+  color: #888888;
+  padding: 8px;
+  display: block;
+}
+#main .book .mySwiper {
+  margin-top: 20px;
+}
+#main .book .mySwiper swiper-slide {
+  text-align: center;
+}
+#main .book .mySwiper swiper-slide img {
+  width: 100%;
+  margin-bottom: 5px;
+  box-shadow: rgb(209, 209, 209) 0px 0px 5px;
+}
+#main .book .mySwiper swiper-slide strong {
+  font-weight: bold;
+  width: 177px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#main .book .mySwiper swiper-slide p {
+  font-size: 15px;
+  color: #555;
 }
 
 #footer {
