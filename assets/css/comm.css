@@ -269,7 +269,7 @@ body {
   position: absolute;
   z-index: 1000;
   left: 0;
-  padding: 0 150px;
+  padding: 0 250px;
   align-items: center;
 }
 #header h1 a {
@@ -286,7 +286,7 @@ body {
 #header .nav .top_nav {
   position: absolute;
   top: 20px;
-  right: 150px;
+  right: 250px;
 }
 #header .nav .top_nav ul {
   gap: 30px;
@@ -307,7 +307,7 @@ body {
 }
 
 #main {
-  margin: 0 150px;
+  margin: 0 250px;
 }
 #main .menu {
   width: 100%;
@@ -316,8 +316,8 @@ body {
   padding-top: 170px;
 }
 #main .menu h2 {
-  font-size: 24px;
-  font-weight: normal;
+  font-size: 22px;
+  font-weight: lighter;
   color: white;
   padding-bottom: 10px;
 }
@@ -400,7 +400,7 @@ body {
   height: 500px;
   margin: 70px 0;
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 #main .board h3 {
   font-size: 30px;
@@ -458,6 +458,52 @@ body {
   width: 80px;
   margin-right: 35px;
 }
+#main .board .event {
+  width: 100%;
+}
+#main .board .event .event_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+#main .board .event .event_list li {
+  width: 49%;
+  box-shadow: rgb(209, 209, 209) 0px 0px 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#main .board .event .event_list li h4 {
+  background: #97ca66;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  padding: 13px 25px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+#main .board .event .event_list li h4 strong {
+  font-weight: bold;
+}
+#main .board .event .event_list li .event_info {
+  display: flex;
+  color: #555;
+  padding: 18px 20px 18px 20px;
+  font-size: 16px;
+}
+#main .board .event .event_list li .event_info strong {
+  font-weight: bold;
+  margin-right: 10px;
+}
+#main .board .event .event_list li .event_info:last-child {
+  margin-top: -30px;
+}
+#main .board .event .event_list .event_list_r {
+  margin-right: 19px;
+}
+#main .board .event .event_list .event_list_b {
+  margin-bottom: 20px;
+}
 #main .book {
   width: 100%;
   height: 375px;
@@ -466,7 +512,7 @@ body {
 }
 
 #footer {
-  margin: 0 150px;
+  margin: 0 250px;
 }
 #footer .link {
   width: 100%;
