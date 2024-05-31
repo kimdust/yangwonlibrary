@@ -6,45 +6,32 @@ $(document).ready(function () {
     $(this).css("color", "white");
   });
 
-  $(".recbook_slide").hide();
-  $(".membook_slide").hide();
+  $(".recbook_slide, .membook_slide").hide();
   $(".new_book").css("color", "#333");
-  $(".rec_book").css("color", "#555");
-  $(".mem_book").css("color", "#555");
+
+  function handleClick(clickedClass, showClass) {
+    $(".newbook_slide, .recbook_slide, .membook_slide").hide();
+    $("." + showClass).show();
+    $(".new_book, .rec_book, .mem_book").css({
+      "font-weight": "normal",
+      color: "#555",
+    });
+    $("." + clickedClass).css({
+      "font-weight": "bold",
+      color: "#333",
+    });
+  }
 
   $(".new_book").click(function () {
-    $(".newbook_slide").show();
-    $(".recbook_slide").hide();
-    $(".membook_slide").hide();
-    $(this).css("font-weight", "bold");
-    $(this).css("color", "#333");
-    $(".rec_book").css("font-weight", "normal");
-    $(".rec_book").css("color", "#555");
-    $(".mem_book").css("font-weight", "normal");
-    $(".mem_book").css("color", "#555");
+    handleClick("new_book", "newbook_slide");
   });
 
   $(".rec_book").click(function () {
-    $(".recbook_slide").show();
-    $(".newbook_slide").hide();
-    $(".membook_slide").hide();
-    $(this).css("font-weight", "bold");
-    $(this).css("color", "#333");
-    $(".new_book").css("font-weight", "normal");
-    $(".new_book").css("color", "#555");
-    $(".mem_book").css("font-weight", "normal");
-    $(".mem_book").css("color", "#555");
+    handleClick("rec_book", "recbook_slide");
   });
+
   $(".mem_book").click(function () {
-    $(".membook_slide").show();
-    $(".newbook_slide").hide();
-    $(".recbook_slide").hide();
-    $(this).css("font-weight", "bold");
-    $(this).css("color", "#333");
-    $(".new_book").css("font-weight", "normal");
-    $(".new_book").css("color", "#555");
-    $(".rec_book").css("font-weight", "normal");
-    $(".rec_book").css("color", "#555");
+    handleClick("mem_book", "membook_slide");
   });
 
   // calendar element 취득
@@ -355,4 +342,12 @@ $(document).ready(function () {
 
   // 캘린더 랜더링
   calendar.render();
+
+  $(".familysite_2depth").hide(); // 페이지 로드 시 모든 2depth 슬라이드 숨김
+
+  $(".familysite_1depth li > button").click(function () {
+    var $target = $(this).next(".familysite_2depth"); // 클릭된 버튼의 다음 형제 요소를 타겟으로 설정
+    $(".familysite_2depth").not($target).slideUp(); // 다른 모든 2depth 슬라이드 업
+    $target.slideToggle(); // 클릭된 버튼에 해당하는 2depth 슬라이드 업/다운
+  });
 });

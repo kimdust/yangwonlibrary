@@ -625,15 +625,84 @@ body {
 }
 
 #footer {
-  margin: 0 250px;
+  width: 100%;
 }
 #footer .link {
   width: 100%;
   height: 70px;
-  background-color: #6a6a6a;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+}
+#footer .link .line01,
+#footer .link .line02 {
+  width: 100px;
+  height: 70px;
+  border-right: 1px solid #dbdbdb;
+  position: absolute;
+}
+#footer .link .line01 {
+  left: 618px;
+}
+#footer .link .line02 {
+  right: 717px;
+}
+#footer .link .familysite_1depth {
+  display: flex;
+  margin: 0 250px;
+  width: 100%;
+  position: relative;
+}
+#footer .link .familysite_1depth li {
+  width: 33.3333%;
+}
+#footer .link .familysite_1depth li button {
+  width: 100%;
+  height: 70px;
+  font-family: "Pretendard";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #555;
+}
+#footer .link .familysite_1depth .familysite_2depth {
+  position: absolute;
+  width: 33.3333%;
+  bottom: 70px;
+  z-index: 100;
+  background: white;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+}
+#footer .link .familysite_1depth .familysite_2depth li {
+  width: 100%;
+  line-height: 3;
+  border-top: 1px solid #dbdbdb;
+  padding: 5px 10px;
 }
 #footer .footer {
-  width: 100%;
+  margin: 0 250px;
   height: 140px;
-  background-color: #505050;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+#footer .footer h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #767676;
+}
+#footer .footer .footer_txt .footer_list {
+  display: flex;
+  gap: 40px;
+  color: #767676;
+}
+#footer .footer .footer_txt .footer_info {
+  color: #9d9d9d;
+  margin: 7px 0;
+}
+#footer .footer .footer_txt .copy {
+  color: #9d9d9d;
 }/*# sourceMappingURL=comm.css.map */
