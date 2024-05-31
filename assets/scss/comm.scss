@@ -374,7 +374,10 @@ body {
     .fc-daygrid-day-bottom {
       display: block;
       font-size: 13px;
-      margin-top: -5px !important;
+      margin-top: 1px !important;
+    }
+    .fc-h-event {
+      border: none;
     }
   }
 }

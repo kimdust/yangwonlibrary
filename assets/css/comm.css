@@ -618,7 +618,10 @@ body {
 #main .calender .fc-daygrid-day-bottom {
   display: block;
   font-size: 13px;
-  margin-top: -5px !important;
+  margin-top: 1px !important;
+}
+#main .calender .fc-h-event {
+  border: none;
 }
 
 #footer {
